@@ -1,11 +1,11 @@
 from .. import loader
 from asyncio import sleep 
 
-class Top(loader.Module):
-	strings = {"name": "Top"}
+class TrollLoveMod(loader.Module):
+	strings = {"name": "TrollLoveGhoul"}
 	
-	async def topcmd(self, message):
-		await message.edit("топ")
+	async def trolllovecmd(self, message):
+		await message.edit("топ!")
 		await sleep(2)
 		await message.respond("А хотя...")
 		await sleep(2)
